@@ -13,8 +13,8 @@ import org.openqa.selenium.support.ui.Select;
 import junit.framework.Assert;
 
 public class BrowserStackTest {
-	public static String USERNAME ="selva144";
-	public static String ACCESSKEY ="AqnPXF5pLXbYoPNzQqhR";
+	public static String USERNAME ="a";
+	public static String ACCESSKEY ="";
 	public static String URL ="https://"+USERNAME+":"+ACCESSKEY+"@hub.browserstack.com/wd/hub";
 
 	public static void main(String[] args) throws Exception {
