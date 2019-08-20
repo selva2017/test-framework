@@ -1,5 +1,7 @@
 package com.selva.selenium.test_framework.ui_test_practice;
 
+import java.sql.DriverManager;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,6 +17,7 @@ public class ModalTest {
 		// TODO Auto-generated method stub
 
 		WebDriverManager.chromedriver().setup();
+//		DriverManager.getConnection(url);
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://mvnrepository.com/artifact/junit/junit/4.12");
@@ -28,6 +31,7 @@ public class ModalTest {
 		Thread.sleep(2000);
 		String modalTitle = driver.findElement(By.className("modal-title")).getText();
 		Assert.assertEquals(modalTitle, "Modal window demo","Title not matched");
+		
 		driver.findElement(By.xpath("//button[text()='Ok']")).click();
 		Thread.sleep(2000);
 		driver.quit();

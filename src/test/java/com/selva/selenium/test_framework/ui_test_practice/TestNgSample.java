@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -33,11 +34,16 @@ public class TestNgSample {
 
 	@Test
 	public void clickModal() throws Exception{
-		
+//		driver.findElement(By)("http://the-internet.herokuapp.com/dynamic_loading/2");
 		driver.get("http://the-internet.herokuapp.com/dynamic_loading/2");
 		driver.findElement(By.xpath("//button[text()='Start']")).click();
 		driver.findElement(By.xpath("//div[@id='finish']/h4")).getText();
 		Assert.assertEquals("Hello World!", driver.findElement(By.xpath("//div[@id='finish']/h4")).getText());
+		
+//		Window handler
+		System.out.println(driver.getWindowHandle());
+		System.out.println(driver.getWindowHandles());
+//		driver.switchTo().window(nameOrHandle)
 		
 //		driver.findElement(By.id("alert")).click();
 //		driver.switchTo().alert().accept();
@@ -52,7 +58,7 @@ public class TestNgSample {
 	@AfterTest
 	public void closeBrowser() throws Exception{
 		Thread.sleep(2000);
-//		driver.quit();
+		driver.quit();
 	}
 
 }

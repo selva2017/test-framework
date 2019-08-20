@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.selva.selenium.test_framework.ui_test_practice.TestNgSample">
+      <class name="com.selva.selenium.test_framework.ui_test_practice.tests.AssertExample">
         <methods>
-          <include name="clickModal"/>
-          <include name="closeBrowser"/>
-          <include name="setup"/>
+          <include name="TestAssert"/>
         </methods>
-      </class> <!-- com.selva.selenium.test_framework.ui_test_practice.TestNgSample -->
+      </class> <!-- com.selva.selenium.test_framework.ui_test_practice.tests.AssertExample -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
