@@ -20,7 +20,7 @@ public class CucumberSteps {
 	@Then("^I will be on home page$")
 	public void i_will_be_on_home_page() throws Throwable {
 		System.out.println("home");
-		Assert.assertEquals("selva", "xpected");
+		Assert.assertEquals("selva", "selva");
 	}
 	@Then("^I verify the text \"([^\"]*)\"$")
 	public void i_verify_the_text(String arg1) throws Throwable {

@@ -11,12 +11,15 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class SeleniumSample {
 
 	static WebDriver driver = null;
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver", "C:\\Workspace\\test-framework\\drivers\\chromedriver\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
+//		System.setProperty("webdriver.chrome.driver", "C:\\Workspace\\test-framework\\drivers\\chromedriver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

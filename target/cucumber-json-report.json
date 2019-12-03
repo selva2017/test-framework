@@ -68,5 +68,191 @@
     "id": "login-feature",
     "keyword": "Feature",
     "uri": "CucumberExample.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Data table without header",
+        "description": "",
+        "id": "sceanrio-outline-examples;data-table-without-header",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "I open my application",
+            "match": {
+              "location": "ScenarioOutline.i_open_my_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "I login with following credentials",
+            "match": {
+              "location": "ScenarioOutline.i_login_with_following_credentials(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "admin",
+                  "pass1234"
+                ],
+                "line": 6
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Data table with header",
+        "description": "",
+        "id": "sceanrio-outline-examples;data-table-with-header",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I open Facebook URL",
+            "match": {
+              "location": "ScenarioOutline.i_open_Facebook_URL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "fill up the new account form with the following data",
+            "match": {
+              "location": "ScenarioOutline.fill_up_the_new_account_form_with_the_following_data(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "First Name",
+                  "Last Name",
+                  "Phone No",
+                  "Password",
+                  "DOB Day",
+                  "DOB Month",
+                  "DOB Year",
+                  "Gender"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "Test FN",
+                  "Test LN",
+                  "0123123123",
+                  "Pass1234",
+                  "01",
+                  "Jan",
+                  "1990",
+                  "Male"
+                ],
+                "line": 12
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Create multiple new accounts in Facebook",
+        "description": "",
+        "id": "sceanrio-outline-examples;create-multiple-new-accounts-in-facebook",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "I open Facebook URL and create new accounts with below data",
+            "match": {
+              "location": "ScenarioOutline.i_open_Facebook_URL_and_create_new_accounts_with_below_data(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "First Name",
+                  "Last Name",
+                  "Phone No",
+                  "Password",
+                  "DOB Day",
+                  "DOB Month",
+                  "DOB Year",
+                  "Gender"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "Abc FN",
+                  "Abc LN",
+                  "0123123123",
+                  "Pass1234",
+                  "01",
+                  "Jan",
+                  "1990",
+                  "Male"
+                ],
+                "line": 17
+              },
+              {
+                "cells": [
+                  "Def FN",
+                  "Def LN",
+                  "0456456456",
+                  "Abcd1234",
+                  "01",
+                  "Feb",
+                  "1990",
+                  "Female"
+                ],
+                "line": 18
+              },
+              {
+                "cells": [
+                  "Xyz FN",
+                  "Xyz LN",
+                  "0789789789",
+                  "Pass2018",
+                  "01",
+                  "Mar",
+                  "1990",
+                  "Female"
+                ],
+                "line": 19
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      }
+    ],
+    "name": "Sceanrio outline examples",
+    "description": "",
+    "id": "sceanrio-outline-examples",
+    "keyword": "Feature",
+    "uri": "ScenarioOutline.feature"
   }
 ]

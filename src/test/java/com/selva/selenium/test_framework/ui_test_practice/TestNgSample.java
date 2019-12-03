@@ -19,10 +19,12 @@ public class TestNgSample {
 
 	@BeforeTest
 	public void setup(){
+		WebDriverManager.chromedriver().setup();
 //		System.setProperty("webdriver.chrome.driver", "C:\\Java_Selenium\\SeleniumFramework\\drivers\\chromedriver\\chromedriver.exe");
-		System.setProperty("webdriver.gecko.driver", "C:\\Java_Selenium\\SeleniumFramework\\drivers\\geckodriver\\geckodriver.exe");
+//		System.setProperty("webdriver.gecko.driver", "C:\\Java_Selenium\\SeleniumFramework\\drivers\\geckodriver\\geckodriver.exe");
 //		WebDriverManager.firefoxdriver().setup();
-		driver = new FirefoxDriver();
+//		driver = new FirefoxDriver();
+		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		

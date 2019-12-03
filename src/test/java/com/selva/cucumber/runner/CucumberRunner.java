@@ -18,7 +18,7 @@ import cucumber.api.junit.Cucumber;
 features = "src/test/java/resources"
 ,glue = {"classpath:.","src/test/java","com.selva.selenium.learning"}
 //,format={'pretty','html:test-output'}
-,dryRun=true
+//,dryRun=true
 )
 public class CucumberRunner {
 

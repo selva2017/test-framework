@@ -13,7 +13,7 @@ public class App
 		String str = "";
 //		StringBuilder str1 = "123";
 //		str1.reverse();
-		int arr[]={100,2,3,60,90,100};
+		int arr[]={100,2,3,60,90,1000};
 		int min=arr[0];
 		int max=arr[0];
 		for(int i=1;i<arr.length;i++)
@@ -26,7 +26,7 @@ public class App
 		System.out.println("Min - "+min);
 		System.out.println("Max - "+max);
 		//Reg exp
-		System.out.println(Pattern.matches("[amn]?", "a"));//true (a or m or n comes one time)
+		System.out.println(Pattern.matches("[amn]?", "a1"));//true (a or m or n comes one time)
 		
 	}
 
